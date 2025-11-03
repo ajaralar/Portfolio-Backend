@@ -1,4 +1,5 @@
 import express from "express";
+import { aboutData } from "../data/aboutData.js";
 
 const router = new express.Router()
 
@@ -9,9 +10,7 @@ router.get('/', (req, res) => {
 })
 
 router.get('/about', (req, res) => {
-    res.status(200).send({
-        message: 'Connected to tech/about'
-    })
+    res.status(200).json(aboutData)
 })
 
 router.get('/resume', (req, res) => {
