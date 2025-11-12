@@ -1,12 +1,14 @@
 export const aboutData = {
     // "ABOUT ME" Section Data
-    title1: 'ABOUT ME',
-    body1: "Hello! I'm a devoted, results-driven, and recent graduate in Information and Technology (2025) ready to transition real-world project experience into a professional development role.",
-    body2: "My focus is on building scalable applications, bridging the gap between UI/UX design and efficient software development. My current personal goal is to achieve an AWS Solutions Architect - Associate certification by 2026 of February.",
-    body3: "Outside of Tech, I volunteer music, which has helped reinforced my communication, accountability, and leadership skills.",
+    aboutTitle: 'ABOUT ME',
+    aboutBody: [
+        "Hello! I'm a devoted, results-driven, and recent graduate in Information and Technology (2025) ready to transition real-world project experience into a professional development role.",
+        "My focus is on building scalable applications, bridging the gap between UI/UX design and efficient software development. My current personal goal is to achieve an AWS Solutions Architect - Associate certification by 2026 of February.",
+        "Outside of Tech, I volunteer music, which has helped reinforced my communication, accountability, and leadership skills.",
+    ],
 
     // "WHAT I'M DOING" Section Data
-    title2: "WHAT I'M DOING",
+    purpTitle: "WHAT I'M DOING",
     purpCards: [ // Purpose Cards
         {
             icon: 'code',
@@ -31,7 +33,7 @@ export const aboutData = {
     ],
 
     // "TESTIMONIALS" Section Data
-    title3: "TESTIMONIALS",
+    testTitle: "TESTIMONIALS",
     testCards: [ // Testimonial Cards
         {
             // Placeholder for the image source (assuming I'll store images in /public or /src/assets)
