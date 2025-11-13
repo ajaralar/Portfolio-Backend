@@ -37,19 +37,19 @@ export const aboutData = {
     testCards: [ // Testimonial Cards
         {
             // Placeholder for the image source (assuming I'll store images in /public or /src/assets)
-            imageSrc: '/assets/gabrielle-perez.jpg',
+            imageSrc: '/assets/gabrielle-perez.png',
             name: "Perez, Gabrielle",
             position: "Project Lead, Tech Solutions Inc.",
             body: "Working with AJ was a turning point for our project. They didn't just execute the designs; they consistently brought a deep, user-focused perspective that helped us pre-empt major pain points. Their ability to break down complex problems into clear design decisions is genuinely top-tier."
         },
         {
-            imageSrc: '/assets/phaul-casao.jpg',
+            imageSrc: '/assets/phaul-casao.png',
             name: "Casao, Phaul",
             position: "Design Manager, Creative Co.",
             body: "I can always count on AJ to deliver exceptional work, even under tight deadlines. Their designs are not only visually stunning but are always backed by solid reasoning and user research. A highly valuable and reliable contributor to any team."
         },
         {
-            imageSrc: '/assets/brenda-shela.jpg',
+            imageSrc: '/assets/brenda-shela.png',
             name: "Shela, Brenda",
             position: "Senior Developer, Acme Corp.",
             body: "It's a pleasure having AJ on the team. They have a truly positive and collaborative approach that drives productive design critique and brainstorming sessions. Their commitment to accessibility standards is outstanding and sets a high bar for the entire team."
