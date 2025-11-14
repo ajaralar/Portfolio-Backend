@@ -1,5 +1,6 @@
 import express from "express";
 import { aboutData } from "../data/aboutData.js";
+import { footerData } from "../data/footerData.js"
 
 const router = new express.Router()
 
@@ -30,5 +31,9 @@ router.get('/projects', (req, res) => {
         message: 'Connected to tech/projects'
     })
 })
+
+router.get('/footer', (req, res) => {
+    res.status(200).json(footerData);
+});
 
 export default router;
