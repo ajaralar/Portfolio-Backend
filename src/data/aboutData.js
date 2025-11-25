@@ -26,7 +26,7 @@ export const aboutData = {
             description: 'I actively pursue structured learning on platforms like Udemy to quickly acquire expertise in new and evolving technologies.'
         },
         {
-            icon: 'aws',
+            icon: 'cloud',
             title: 'Practicing AWS',
             description: 'I am actively developing skills in AWS Cloud services, focusing on deployment of serverless architecture.'
         },
