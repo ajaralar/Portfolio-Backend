@@ -2,6 +2,7 @@ import express from "express";
 import { aboutData } from "../data/aboutData.js";
 import { footerData } from "../data/footerData.js"
 import { resumeData } from "../data/resumeData.js";
+import { projectData } from "../data/projectData.js";
 
 const router = new express.Router()
 
@@ -26,9 +27,7 @@ router.get('/connect', (req, res) => {
 })
 
 router.get('/projects', (req, res) => {
-    res.status(200).send({
-        message: 'Connected to tech/projects'
-    })
+    res.status(200).send(projectData)
 })
 
 router.get('/footer', (req, res) => {
