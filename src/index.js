@@ -12,6 +12,8 @@ app.use(cors({
     allowedHeaders: ['Content-Type']
 }))
 
+app.use(express.static('public'))
+
 app.get('/', (req, res) => {
     res.status(200).send({
         message: 'Connected to home',
