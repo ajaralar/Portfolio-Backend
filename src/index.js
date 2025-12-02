@@ -1,13 +1,19 @@
 import express from 'express';
 import cors from 'cors'
 import techRoutes from '../src/routes/techRoutes.js'
+import dotenv from 'dotenv';
 
+// Load environment variables
+dotenv.config()
+const FRONT_DOMAIN = process.env.FRONT_DOMAIN
+const SERVER_PORT = process.env.SERVER_PORT
+
+// Initialize express
 const app = express()
-const SERVER_PORT = 3000;
-const FRONT_PORT = 5173;
 
+// Give front-end access to data
 app.use(cors({
-    origin: [`http://localhost:${FRONT_PORT}`, `http://127.0.0.1:${FRONT_PORT}`],
+    origin: [`${FRONT_DOMAIN}`],
     methods: ['GET'],
     allowedHeaders: ['Content-Type']
 }))

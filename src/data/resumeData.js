@@ -1,3 +1,9 @@
+import dotenv from 'dotenv';
+
+// Load environment variables
+dotenv.config();
+const BACK_DOMAIN = process.env.BACK_DOMAIN
+
 export const resumeData = {
     // Personal Identifiable Information
     name: 'JOSE RICKY S. ARALAR JR',
@@ -105,7 +111,7 @@ export const resumeData = {
             collectionHeader: 'Certifications',
             items: [
                 {
-                    imgSrc: '/assets/badge.png',
+                    imgSrc: `${BACK_DOMAIN}/images/certifications/badge.png`,
                     title: 'AWS Certified Cloud Practitioner',
                     issuedBy: 'AWS',
                     issuedOn: 'September 29, 2025',
