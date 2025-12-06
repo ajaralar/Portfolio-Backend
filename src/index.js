@@ -11,15 +11,20 @@ const SERVER_PORT = process.env.SERVER_PORT
 // Initialize express
 const app = express()
 
+// Parse JSON request
+app.use(express.json())
+
 // Give front-end access to data
 app.use(cors({
     origin: [`${FRONT_DOMAIN}`],
-    methods: ['GET'],
+    methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type']
 }))
 
+// Tells express to use the public folder
 app.use(express.static('public'))
 
+// Landing page
 app.get('/', (req, res) => {
     res.status(200).send({
         message: 'Connected to home',
@@ -27,6 +32,7 @@ app.get('/', (req, res) => {
     })
 })
 
+// Tech routes
 app.use('/tech', techRoutes)
 
 app.listen(SERVER_PORT, () => {
