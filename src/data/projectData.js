@@ -1,7 +1,3 @@
-import dotenv from 'dotenv';
-
-// Load environment variables
-dotenv.config();
 const BACK_DOMAIN = process.env.BACK_DOMAIN
 
 export const projectData = {
