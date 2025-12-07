@@ -45,7 +45,6 @@ export const aboutData = {
         },
         {
             imageSrc: `${BACK_DOMAIN}/images/testimonials/phaul-casao.png`,
-            imageSrc: 'http://localhost:3000/images/testimonials/phaul-casao.png',
             name: "Casao, Phaul",
             position: "Design Manager, Creative Co.",
             body: "I can always count on AJ to deliver exceptional work, even under tight deadlines. Their designs are not only visually stunning but are always backed by solid reasoning and user research. A highly valuable and reliable contributor to any team."

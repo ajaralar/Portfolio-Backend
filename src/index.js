@@ -1,10 +1,9 @@
+import './config/env.js';
 import express from 'express';
 import cors from 'cors'
 import techRoutes from '../src/routes/techRoutes.js'
-import dotenv from 'dotenv';
 
 // Load environment variables
-dotenv.config()
 const FRONT_DOMAIN = process.env.FRONT_DOMAIN
 const SERVER_PORT = process.env.SERVER_PORT
 
