@@ -6,6 +6,11 @@ import techRoutes from '../src/routes/techRoutes.js'
 // Load environment variables
 const FRONT_DOMAIN = process.env.FRONT_DOMAIN
 const SERVER_PORT = process.env.SERVER_PORT
+const allowedOrigins = [
+    `${FRONT_DOMAIN}`,
+    'http://192.168.1.172:5173',
+    'http://127.0.0.1:5173'
+]
 
 // Initialize express
 const app = express()
@@ -14,8 +19,9 @@ const app = express()
 app.use(express.json())
 
 // Give front-end access to data
+
 app.use(cors({
-    origin: [`${FRONT_DOMAIN}`],
+    origin: allowedOrigins,
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type']
 }))
