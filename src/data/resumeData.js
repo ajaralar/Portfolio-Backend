@@ -2,8 +2,8 @@ const BACK_DOMAIN = process.env.BACK_DOMAIN
 
 export const resumeData = {
     // Personal Identifiable Information
-    name: 'JOSE RICKY S. ARALAR JR',
-    work: ['Software Developer', 'UI/UX Designer'],
+    name: 'JOSE RICKY ARALAR JR',
+    work: ['Software Developer', 'UI/UX Designer', 'Cloud Engineer'],
     state: 'Virginia',
     city: 'Fredericksburg',
     age: 23,
@@ -11,7 +11,8 @@ export const resumeData = {
     // Skills list
     skills: [
         { name: 'Web development', progress: 90 },
-        { name: 'UI/UX Design', progress: 80 }
+        { name: 'UI/UX Design', progress: 80 },
+        { name: 'AWS Cloud', progress: 30 }
     ],
 
     // Tech list
@@ -47,7 +48,7 @@ export const resumeData = {
                 {
                     university: 'Philippine Christian University',
                     location: 'Manila, Philippines',
-                    date: 'January 2020 - May 2025',
+                    date: 'Jan 2020 - May 2025',
                     bullet: [
                         'Bachelor of Science in Information and Technology',
                         'Consistent Dean\'s Lister',
@@ -65,7 +66,7 @@ export const resumeData = {
                     role: 'IT Support Intern',
                     company: 'TTEC (Formerly TeleTech)',
                     location: 'Manila, Philippines',
-                    date: 'September 2024 - January 2025',
+                    date: 'Sept 2024 - Jan 2025',
                     bullet: [
                         'Supported fellow interns by performing inventory checks to ensure accuracy and organization of IT assets',
                         'Assisted IT professionals in resolving variety of technical issues by handling support tickets and escalating complex problems as needed',
@@ -77,7 +78,7 @@ export const resumeData = {
                     role: 'IT Support Volunteer',
                     company: 'Harvest of Souls for Christ Church',
                     location: 'Manila, Philippines',
-                    date: 'January 2016 - May 2025',
+                    date: 'Jan 2016 - May 2025',
                     bullet: [
                         'Responsible for diagnosing and resolving both software and hardware issues, ensuring all systems run smoothly',
                         'Managed and organized the setup and maintenance of complex cable systems for instruments, mixers, and other audio-visual equipment',
@@ -95,7 +96,7 @@ export const resumeData = {
                 {
                     title: 'Figma UI UX Design Essentials',
                     issuedBy: 'Udemy',
-                    issuedOn: 'October 21, 2025',
+                    issuedOn: 'Oct 21, 2025',
                     learning: '“Gained advanced proficiency in Figma, focusing on Auto Layout, Variants, and Prototyping to build scalable design systems. Applied core UX principles to deliver high-fidelity, interactive prototypes ready for developer handoff”',
                     url: 'https://www.udemy.com/certificate/UC-92d45692-5c4f-4f98-8f2f-f8479e9a420b'
                 }
@@ -110,7 +111,7 @@ export const resumeData = {
                     imgSrc: `${BACK_DOMAIN}/images/certifications/badge.png`,
                     title: 'AWS Certified Cloud Practitioner',
                     issuedBy: 'AWS',
-                    issuedOn: 'September 29, 2025',
+                    issuedOn: 'Sept 29, 2025',
                     url: 'https://www.credly.com/badges/50e0e9bb-c414-4150-b581-6f570b908ac8/public_url'
                 }
             ]

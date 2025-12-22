@@ -3,6 +3,7 @@ import { validationResult } from "express-validator";
 import { aboutData } from "../data/aboutData.js";
 import { footerData } from "../data/footerData.js"
 import { resumeData } from "../data/resumeData.js";
+import { homeData } from "../data/homeData.js"
 import { projectData } from "../data/projectData.js";
 import { connectValidation } from "../utils/connectValidation.js";
 import { sendContactEmail } from "../utils/emaillService.js";
@@ -10,9 +11,7 @@ import { sendContactEmail } from "../utils/emaillService.js";
 const router = new express.Router()
 
 router.get('/', (req, res) => {
-    res.status(200).send({
-        message: 'Connected to tech'
-    })
+    res.status(200).send(homeData)
 })
 
 router.get('/about', (req, res) => {
