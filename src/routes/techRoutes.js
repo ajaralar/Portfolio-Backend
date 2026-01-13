@@ -1,25 +1,25 @@
 import express from "express";
 import { validationResult } from "express-validator";
-import { aboutData } from "../data/aboutData.js";
-import { footerData } from "../data/footerData.js"
-import { resumeData } from "../data/resumeData.js";
-import { homeData } from "../data/homeData.js"
-import { projectData } from "../data/projectData.js";
+import { techAboutData } from "../data/techAboutData.js";
+import { techFooterData } from "../data/techFooterData.js"
+import { techResumeData } from "../data/techResumeData.js";
+import { techHomeData } from "../data/techHomeData.js"
+import { techProjectData } from "../data/techProjectData.js";
 import { connectValidation } from "../utils/connectValidation.js";
 import { sendContactEmail } from "../utils/emaillService.js";
 
 const router = new express.Router()
 
 router.get('/', (req, res) => {
-    res.status(200).send(homeData)
+    res.status(200).send(techHomeData)
 })
 
 router.get('/about', (req, res) => {
-    res.status(200).json(aboutData)
+    res.status(200).json(techAboutData)
 })
 
 router.get('/resume', (req, res) => {
-    res.status(200).send(resumeData)
+    res.status(200).send(techResumeData)
 })
 
 router.get('/connect', (req, res) => {
@@ -57,11 +57,11 @@ router.post('/connect', connectValidation, async (req, res) => {
 })
 
 router.get('/projects', (req, res) => {
-    res.status(200).send(projectData)
+    res.status(200).send(techProjectData)
 })
 
 router.get('/footer', (req, res) => {
-    res.status(200).json(footerData);
+    res.status(200).json(techFooterData);
 });
 
 export default router;

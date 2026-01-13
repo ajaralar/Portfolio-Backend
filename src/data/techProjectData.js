@@ -1,6 +1,6 @@
 const BACK_DOMAIN = process.env.BACK_DOMAIN
 
-export const projectData = {
+export const techProjectData = {
     sectionTitle: 'PROJECTS',
     sectionBody: [
         "A showcase of my recent work, demonstrating proficiency across the full development lifecycle—from conceptual UI/UX design to scalable, well-architected backend implementation.",

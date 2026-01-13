@@ -1,6 +1,6 @@
 const BACK_DOMAIN = process.env.BACK_DOMAIN
 
-export const aboutData = {
+export const techAboutData = {
     // "ABOUT ME" Section Data
     aboutTitle: 'ABOUT ME',
     aboutBody: [

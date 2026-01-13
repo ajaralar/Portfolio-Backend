@@ -1,6 +1,6 @@
 const BACK_DOMAIN = process.env.BACK_DOMAIN
 
-export const resumeData = {
+export const techResumeData = {
     // Personal Identifiable Information
     name: 'JOSE RICKY ARALAR JR',
     work: ['Software Developer', 'UI/UX Designer', 'Cloud Engineer'],
