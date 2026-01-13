@@ -2,6 +2,7 @@ import './config/env.js';
 import express from 'express';
 import cors from 'cors'
 import techRoutes from '../src/routes/techRoutes.js'
+import lobbyRoutes from '../src/routes/lobbyRoutes.js'
 
 // Load environment variables
 const FRONT_DOMAIN = process.env.FRONT_DOMAIN
@@ -29,13 +30,8 @@ app.use(cors({
 // Tells express to use the public folder
 app.use(express.static('public'))
 
-// Landing page
-app.get('/', (req, res) => {
-    res.status(200).send({
-        message: 'Connected to home',
-        routes: ['/tech']
-    })
-})
+// Lobby routes
+app.use('/', lobbyRoutes)
 
 // Tech routes
 app.use('/tech', techRoutes)
